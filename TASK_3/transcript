@@ -1,0 +1,41 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/Users/masha/OneDrive/Desktop/TASK_3/TASK3.mpf
+# Loading project TASK3
+# Compile of gps_code_nco.v was successful.
+# Compile of tb_gps_code_nco.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_gps_code_nco
+# vsim -gui work.tb_gps_code_nco 
+# Start time: 11:49:44 on Jul 13,2026
+# Loading work.tb_gps_code_nco
+# Loading work.gps_code_nco
+add wave -position insertpoint  \
+sim:/tb_gps_code_nco/clk \
+sim:/tb_gps_code_nco/rst \
+sim:/tb_gps_code_nco/code_tick
+run -all
+# ---------------------------------------------------------------
+# Starting GPS Code NCO Verification...
+# System Clock: 16.368 MHz | Expected Target: 2.046 MHz (Div-by-8)
+# ---------------------------------------------------------------
+# [STATUS] Reset released. Monitoring code_tick pulses...
+# 
+# [ERROR] Tick #1 received. Clock cycles since last tick: 9 (Expected: 8!). Timing mismatch!
+# [SUCCESS] Tick #2 received. Clock cycles since last tick: 8 (Exactly 8). Frequency is perfect!
+# [SUCCESS] Tick #3 received. Clock cycles since last tick: 8 (Exactly 8). Frequency is perfect!
+# [SUCCESS] Tick #4 received. Clock cycles since last tick: 8 (Exactly 8). Frequency is perfect!
+# [SUCCESS] Tick #5 received. Clock cycles since last tick: 8 (Exactly 8). Frequency is perfect!
+# [SUCCESS] Tick #6 received. Clock cycles since last tick: 8 (Exactly 8). Frequency is perfect!
+# [SUCCESS] Tick #7 received. Clock cycles since last tick: 8 (Exactly 8). Frequency is perfect!
+# [SUCCESS] Tick #8 received. Clock cycles since last tick: 8 (Exactly 8). Frequency is perfect!
+# [SUCCESS] Tick #9 received. Clock cycles since last tick: 8 (Exactly 8). Frequency is perfect!
+# 
+# ---------------------------------------------------------------
+# Simulation Completed Successfully.
+# ---------------------------------------------------------------
+# ** Note: $finish    : C:/Users/masha/OneDrive/Desktop/TASK_3/tb_gps_code_nco.v(79)
+#    Time: 4979161 ps  Iteration: 2  Instance: /tb_gps_code_nco
+# 1
+# Break in Module tb_gps_code_nco at C:/Users/masha/OneDrive/Desktop/TASK_3/tb_gps_code_nco.v line 79
+# End time: 12:34:39 on Jul 13,2026, Elapsed time: 0:44:55
+# Errors: 0, Warnings: 0

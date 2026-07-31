@@ -1,0 +1,3 @@
+1. Read section 2.3.3 Gold Sequence Generation from the attached reference book. 
+2. Verilog module of C/A code generator is attached to this email, make a testbench and verify the C/A code generator module, if you observe any issue in the code generator module then correct it and re-simulate. 
+3. One internee verify the module from PRN 1 to PRN 16 and the other internee verify it from PRN 17 to PRN 32. 

@@ -1,0 +1,5 @@
+Accumulator: 
+1. Design a module that will accumulate one 4-bit signed input at frequency of 16.368MHz for every 1ms and output the 16-bit accumulated data.
+You have to accumulate data for 1ms only then reset it to zero. For 1ms, the 16 bit data register will not overflow. 
+
+From testbench, give 1ms interrupt to the module. At every posedge of 1ms, the output variable 16 bit ACCUMDATA gives output.

@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/masha/OneDrive/Desktop/Internship Task
+vg1_lfsr
+Z0 !s110 1783617373
+!i10b 1
+!s100 ;[F^IBUh:@91DJgKl337z2
+IKc_G2JcVcORj8Tc6XjY3[3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/masha/OneDrive/Desktop/TASK
+w1783616958
+8C:/Users/masha/OneDrive/Desktop/TASK/g1_lfsr.v
+FC:/Users/masha/OneDrive/Desktop/TASK/g1_lfsr.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1783617373.000000
+!s107 C:/Users/masha/OneDrive/Desktop/TASK/g1_lfsr.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/masha/OneDrive/Desktop/TASK/g1_lfsr.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vg2_lfsr
+Z7 !s110 1783617374
+!i10b 1
+!s100 c4`g0E7kIa;7X:X89C?1]0
+I1z?>:l6GC[l;OhLEZdcjL0
+R1
+R2
+w1783616980
+8C:/Users/masha/OneDrive/Desktop/TASK/g2_lfsr.v
+FC:/Users/masha/OneDrive/Desktop/TASK/g2_lfsr.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1783617374.000000
+!s107 C:/Users/masha/OneDrive/Desktop/TASK/g2_lfsr.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/masha/OneDrive/Desktop/TASK/g2_lfsr.v|
+!i113 1
+R5
+R6
+vgps_ca_top
+R0
+!i10b 1
+!s100 DRQV`7dYmo3WM106MS6`33
+I1bm=a9kFnF_P6^DUM8@KZ0
+R1
+R2
+Z9 w1783593989
+8C:/Users/masha/OneDrive/Desktop/TASK/gps_ca_top.v
+FC:/Users/masha/OneDrive/Desktop/TASK/gps_ca_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/masha/OneDrive/Desktop/TASK/gps_ca_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/masha/OneDrive/Desktop/TASK/gps_ca_top.v|
+!i113 1
+R5
+R6
+vprn_selector
+R7
+!i10b 1
+!s100 1>R_7QnkEJi?Z]ZE;1XQ63
+IQeD][CXF;Cl`W2E[LEoPE2
+R1
+R2
+R9
+8C:/Users/masha/OneDrive/Desktop/TASK/prn_selector.v
+FC:/Users/masha/OneDrive/Desktop/TASK/prn_selector.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/masha/OneDrive/Desktop/TASK/prn_selector.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/masha/OneDrive/Desktop/TASK/prn_selector.v|
+!i113 1
+R5
+R6
+vtb_gps_ca_prn1_16
+!s110 1783658071
+!i10b 1
+!s100 :QMhRFQhldZO9za7>L`d61
+InhNk>>7];G`l_Udmage4U3
+R1
+R2
+w1783658057
+8C:\Users\masha\OneDrive\Desktop\TASK\tb_gps_ca_prn1_16.v
+FC:\Users\masha\OneDrive\Desktop\TASK\tb_gps_ca_prn1_16.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1783658071.000000
+!s107 C:\Users\masha\OneDrive\Desktop\TASK\tb_gps_ca_prn1_16.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\masha\OneDrive\Desktop\TASK\tb_gps_ca_prn1_16.v|
+!i113 1
+R5
+R6

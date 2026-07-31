@@ -1,0 +1,5 @@
+Multipliers: 
+1. Design a module that will multiply two 3-bit signed inputs and the output will be a 4-bit signed. 
+2. Design a module that will multiply one 4-bit signed input and one 2 bit signed input and the output will be 4 bit signed. 
+
+These two multipliers used dsp slices in the fpga so if vivado is installed then prefer vivado for these simulations. 

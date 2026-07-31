@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/masha/OneDrive/Desktop/TASK_2
+vgps_code_nco
+Z0 !s110 1783925371
+!i10b 1
+!s100 1:W^ILg]QaheSm;ZH[^Nl3
+IlKmVJFzW_XlVl>H5Mj6j03
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/masha/OneDrive/Desktop/TASK_3
+w1783793437
+8C:\Users\masha\OneDrive\Desktop\TASK_3\gps_code_nco.v
+FC:\Users\masha\OneDrive\Desktop\TASK_3\gps_code_nco.v
+L0 7
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1783925371.000000
+!s107 C:\Users\masha\OneDrive\Desktop\TASK_3\gps_code_nco.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\masha\OneDrive\Desktop\TASK_3\gps_code_nco.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtb_gps_code_nco
+R0
+!i10b 1
+!s100 :4dmfh[<Z@HlWTQnNgQ0W1
+IK4oBA5hZ>dRoK=lXJiY8F3
+R1
+R2
+w1783919435
+8C:\Users\masha\OneDrive\Desktop\TASK_3\tb_gps_code_nco.v
+FC:\Users\masha\OneDrive\Desktop\TASK_3\tb_gps_code_nco.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\masha\OneDrive\Desktop\TASK_3\tb_gps_code_nco.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\masha\OneDrive\Desktop\TASK_3\tb_gps_code_nco.v|
+!i113 1
+R5
+R6

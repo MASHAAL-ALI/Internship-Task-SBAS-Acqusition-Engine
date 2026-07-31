@@ -1,0 +1,60 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/Users/masha/OneDrive/Desktop/TASK_1/TASK.mpf
+# Loading project TASK
+vsim -gui work.tb_gps_ca_prn1_16
+# vsim -gui work.tb_gps_ca_prn1_16 
+# Start time: 15:37:34 on Jul 22,2026
+# Loading work.tb_gps_ca_prn1_16
+# Loading work.gps_ca_top
+# Loading work.g1_lfsr
+# Loading work.g2_lfsr
+# Loading work.prn_selector
+add wave -position end sim:/tb_gps_ca_prn1_16/*
+run -all
+# =========================================================
+#  Internee 1 : verifying PRN 1 .......... PRN 32 
+#  Compare the printed octal value against Table 2.3
+#  ("First 10 chips octal" column) for each PRN.
+# =========================================================
+# PRN1 : chips = 1100100000  (octal 1440)  g1=0001110001 g2=0010110100
+# PRN2 : chips = 1110010000  (octal 1620)  g1=0001110001 g2=0010110100
+# PRN3 : chips = 1111001000  (octal 1710)  g1=0001110001 g2=0010110100
+# PRN4 : chips = 1111100100  (octal 1744)  g1=0001110001 g2=0010110100
+# PRN5 : chips = 1001011011  (octal 1133)  g1=0001110001 g2=0010110100
+# PRN6 : chips = 1100101101  (octal 1455)  g1=0001110001 g2=0010110100
+# PRN7 : chips = 1001011001  (octal 1131)  g1=0001110001 g2=0010110100
+# PRN8 : chips = 1100101100  (octal 1454)  g1=0001110001 g2=0010110100
+# PRN9 : chips = 1110010110  (octal 1626)  g1=0001110001 g2=0010110100
+# PRN10 : chips = 1101000100  (octal 1504)  g1=0001110001 g2=0010110100
+# PRN11 : chips = 1110100010  (octal 1642)  g1=0001110001 g2=0010110100
+# PRN12 : chips = 1111101000  (octal 1750)  g1=0001110001 g2=0010110100
+# PRN13 : chips = 1111110100  (octal 1764)  g1=0001110001 g2=0010110100
+# PRN14 : chips = 1111111010  (octal 1772)  g1=0001110001 g2=0010110100
+# PRN15 : chips = 1111111101  (octal 1775)  g1=0001110001 g2=0010110100
+# PRN16 : chips = 1111111110  (octal 1776)  g1=0001110001 g2=0010110100
+# PRN17 : chips = 1001101110  (octal 1156)  g1=0001110001 g2=0010110100
+# PRN18 : chips = 1100110111  (octal 1467)  g1=0001110001 g2=0010110100
+# PRN19 : chips = 1110011011  (octal 1633)  g1=0001110001 g2=0010110100
+# PRN20 : chips = 1111001101  (octal 1715)  g1=0001110001 g2=0010110100
+# PRN21 : chips = 1111100110  (octal 1746)  g1=0001110001 g2=0010110100
+# PRN22 : chips = 1111110011  (octal 1763)  g1=0001110001 g2=0010110100
+# PRN23 : chips = 1000110011  (octal 1063)  g1=0001110001 g2=0010110100
+# PRN24 : chips = 1111000110  (octal 1706)  g1=0001110001 g2=0010110100
+# PRN25 : chips = 1111100011  (octal 1743)  g1=0001110001 g2=0010110100
+# PRN26 : chips = 1111110001  (octal 1761)  g1=0001110001 g2=0010110100
+# PRN27 : chips = 1111111000  (octal 1770)  g1=0001110001 g2=0010110100
+# PRN28 : chips = 1111111100  (octal 1774)  g1=0001110001 g2=0010110100
+# PRN29 : chips = 1001010111  (octal 1127)  g1=0001110001 g2=0010110100
+# PRN30 : chips = 1100101011  (octal 1453)  g1=0001110001 g2=0010110100
+# PRN31 : chips = 1110010101  (octal 1625)  g1=0001110001 g2=0010110100
+# PRN32 : chips = 1111001010  (octal 1712)  g1=0001110001 g2=0010110100
+# =========================================================
+#  Internee 1 block finished successfully.
+# =========================================================
+# ** Note: $stop    : C:/Users/masha/OneDrive/Desktop/TASK/tb_gps_ca_prn1_16.v(81)
+#    Time: 3846 ns  Iteration: 0  Instance: /tb_gps_ca_prn1_16
+# Break in Module tb_gps_ca_prn1_16 at C:/Users/masha/OneDrive/Desktop/TASK/tb_gps_ca_prn1_16.v line 81
+# Error opening C:/Users/masha/OneDrive/Desktop/TASK/tb_gps_ca_prn1_16.v
+# Path name 'C:/Users/masha/OneDrive/Desktop/TASK/tb_gps_ca_prn1_16.v' doesn't exist.
+# End time: 08:29:16 on Jul 23,2026, Elapsed time: 16:51:42
+# Errors: 1, Warnings: 0

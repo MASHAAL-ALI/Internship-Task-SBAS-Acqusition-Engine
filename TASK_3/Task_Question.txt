@@ -1,0 +1,22 @@
+Task2: Design a GPS L1 Code NCO Generator Module (2× Chip Rate)
+Objective
+
+Design a synthesizable Verilog/SystemVerilog module that generates a 2× GPS L1 C/A code chip clock enable using a Numerically Controlled Oscillator (NCO). The module will serve as the timing source for a GPS L1 C/A code generator operating at 2 samples per chip, producing a chip enable pulse at 2.046 MHz from a 16.368 MHz system clock.
+
+Specifications
+Application: GPS L1 C/A Code Generator
+System Clock: 16.368 MHz
+Code Clock Frequency: 2.046 MHz (1.023 MHz × 2)
+Implementation: Phase accumulator (NCO)
+Phase Accumulator Width: Parameterizable (default: 32 bits)
+Reset: Synchronous Reset
+Output: One-clock-cycle code_tick pulse
+Functional Requirements
+Generate a code_tick pulse with an average frequency of 2.046 MHz.
+
+Increment the phase accumulator on every rising edge of the 16.368 MHz system clock.
+Generate a one-clock-cycle code_tick pulse whenever the accumulator overflows (carry-out), ensuring accurate long-term frequency with no cumulative timing error.
+Inputs
+clk : 16.368 MHz system clock
+rst : Synchronous reset
+code_tick : One-clock-cycle pulse at 2.046 MHz

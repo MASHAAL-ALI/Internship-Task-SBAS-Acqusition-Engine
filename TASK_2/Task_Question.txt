@@ -1,0 +1,17 @@
+Objective:
+Design a synthesizable Verilog/SystemVerilog module that generates the GPS L1 intermediate-frequency (IF) carrier for use in a GPS signal generator.
+
+Specifications
+System Clock: 16.368 MHz
+Output IF Frequency: 4.092 MHz
+Carrier Type: Digital sinusoidal carrier suitable for GPS L1 baseband modulation.
+Implementation: Numerically Controlled Oscillator (NCO) using a phase accumulator and lookup table (LUT).
+Phase Accumulator Width: Parameterizable (default: 32 bits).
+Output Width: Parameterizable (default: 12-bit signed samples).
+Reset: Synchronous reset.
+
+Functional Requirements
+Generate a continuous carrier at exactly 4.092 MHz from a 16.368 MHz system clock.
+
+Use the MSBs of the phase accumulator to address a sine LUT.
+Optionally generate both I (cosine) and Q (sine) outputs with a 90° phase offset.

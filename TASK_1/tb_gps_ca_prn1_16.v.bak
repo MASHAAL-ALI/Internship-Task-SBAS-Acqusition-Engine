@@ -1,0 +1,84 @@
+`timescale 1ns/1ps
+// ============================================================
+// Testbench - Internee 1 (Corrected Timing & Direction)
+// Verifies gps_ca_top for PRN 1 through PRN 16
+// ============================================================
+module tb_gps_ca_prn1_16;
+
+    reg clk;
+    reg reset;
+    reg [5:0] prn_select;
+
+    wire prn_code;
+    wire [9:0] g1_state;
+    wire [9:0] g2_state;
+
+    integer i, p;
+    reg [9:0] chip_capture;   // holds first 10 chips of the current PRN
+    reg [9:0] prn5_capture;   // saved so later PRNs can be sanity-checked
+
+    // Instantiate DUT
+    gps_ca_top DUT (
+        .clk(clk),
+        .reset(reset),
+        .prn_select(prn_select),
+        .prn_code(prn_code),
+        .g1_state(g1_state),
+        .g2_state(g2_state)
+    );
+
+    // Clock generator
+    always #5 clk = ~clk;
+
+    task run_one_prn;
+        input [5:0] code_num;
+        integer k;
+        begin
+            // Restore missing assignment line
+            prn_select = code_num;
+
+            // Reset G1/G2 back to all-ones for the code epoch
+            reset = 1;
+            @(posedge clk);
+            @(posedge clk);
+            #1; // allow reset state to settle completely
+            reset = 0;
+
+            // Optimized Sampling Logic: 
+            // Read current chip immediately at the current epoch, then advance clock.
+            for (k = 9; k >= 0; k = k - 1) begin
+                chip_capture[k] = prn_code; // Read current chip first
+                @(posedge clk);             // Advance clock for the next state
+                #1;                         // Let outputs settle after edge
+            end
+
+            $display("PRN%0d : chips = %b  (octal %o)  g1=%b g2=%b",
+                       code_num, chip_capture, chip_capture, g1_state, g2_state);
+        end
+    endtask
+
+    initial begin
+        clk = 0;
+        reset = 1;
+        prn_select = 6'd1;
+
+        $display("=========================================================");
+        $display(" Internee 1 : verifying PRN 1 .. PRN 16 (UPDATED)");
+        $display(" Compare the printed octal value against Table 2.3");
+        $display(" (\"First 10 chips octal\" column) for each PRN.");
+        $display("=========================================================");
+
+        // Wait a small moment before initiating the test loop
+        #10;
+
+        for (p = 1; p <= 16; p = p + 1) begin
+            run_one_prn(p[5:0]);
+        end
+
+        $display("=========================================================");
+        $display(" Internee 1 block finished successfully.");
+        $display("=========================================================");
+        $stop;
+    end
+
+endmodule

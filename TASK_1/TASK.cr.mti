@@ -1,0 +1,36 @@
+C:/Users/masha/OneDrive/Desktop/TASK/prn_selector.v {1 {vlog -work work -stats=none C:/Users/masha/OneDrive/Desktop/TASK/prn_selector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module prn_selector
+
+Top level modules:
+	prn_selector
+
+} {} {}} C:/Users/masha/OneDrive/Desktop/TASK/tb_gps_ca_prn1_16.v {1 {vlog -work work -stats=none {C:\Users\masha\OneDrive\Desktop\TASK\tb_gps_ca_prn1_16.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_gps_ca_prn1_16
+
+Top level modules:
+	tb_gps_ca_prn1_16
+
+} {} {}} C:/Users/masha/OneDrive/Desktop/TASK/g1_lfsr.v {1 {vlog -work work -stats=none C:/Users/masha/OneDrive/Desktop/TASK/g1_lfsr.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module g1_lfsr
+
+Top level modules:
+	g1_lfsr
+
+} {} {}} C:/Users/masha/OneDrive/Desktop/TASK/gps_ca_top.v {1 {vlog -work work -stats=none C:/Users/masha/OneDrive/Desktop/TASK/gps_ca_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module gps_ca_top
+
+Top level modules:
+	gps_ca_top
+
+} {} {}} C:/Users/masha/OneDrive/Desktop/TASK/g2_lfsr.v {1 {vlog -work work -stats=none C:/Users/masha/OneDrive/Desktop/TASK/g2_lfsr.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module g2_lfsr
+
+Top level modules:
+	g2_lfsr
+
+} {} {}}
